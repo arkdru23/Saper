@@ -47,8 +47,8 @@ html {
 
 .game {
   background: var(--primary-color);
-  padding: 1.5rem;
-  max-width: 35.6rem;
+  padding: var(--game-padding);
+  max-width: var(--game-max-width);
   margin: 0 auto;
 }
 
@@ -60,8 +60,15 @@ html {
 }
 
 .cell {
-  width: 4rem;
-  height: 4rem;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cell--is--flag {
+  background-image: url("../assets/flag.svg");
 }
 
 .header {
@@ -161,7 +168,7 @@ html {
 }
 
 .border {
-  border: 0.3rem solid;
+  border: var(--border-width) solid;
 }
 
 .border--convex {
@@ -170,6 +177,11 @@ html {
 
 .border--concave {
   border-color: #fff var(--primary-color--dark) var(--primary-color--dark) #fff;
+}
+
+.border--revealed {
+  border-width: 0.1rem;
+  border-color: var(--primary-color--dark);
 }
 
 .hide {
