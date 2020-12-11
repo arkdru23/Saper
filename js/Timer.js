@@ -4,7 +4,7 @@ export class Timer extends UI {
   #element = null;
   #interval = null;
   numberOfSeconds = 0;
-  #maxNumberOfSeconds = 5;
+  #maxNumberOfSeconds = 9999;
 
   init() {
     this.#element = this.getElement(this.UiSelectors.timer);
