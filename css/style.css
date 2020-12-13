@@ -65,6 +65,8 @@ html {
   background-size: 2rem;
   background-repeat: no-repeat;
   background-position: center;
+  font-size: 2.4rem;
+  text-align: center;
 }
 
 .cell--is--flag {
@@ -74,6 +76,31 @@ html {
 .cell--is--mine {
   background-image: url("../assets/bomb.svg");
   background-color: var(--alarm-color);
+}
+
+.cell-info-1 {
+  color: var(--info-one-color);
+}
+.cell-info-2 {
+  color: var(--info-two-color);
+}
+.cell-info-3 {
+  color: var(--info-three-color);
+}
+.cell-info-4 {
+  color: var(--info-four-color);
+}
+.cell-info-5 {
+  color: var(--info-five-color);
+}
+.cell-info-6 {
+  color: var(--info-six-color);
+}
+.cell-info-7 {
+  color: var(--info-seven-color);
+}
+.cell-info-8 {
+  color: var(--info-eight-color);
 }
 
 .header {
